@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "love-craft:block/example_block" }
+  }
+}

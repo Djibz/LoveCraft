@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "love-craft",
+	"version": "${version}",
+	"name": "Love Craft",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/love-craft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fr.deke.lovecraft.LoveCraft"
+		],
+		"client": [
+			"fr.deke.lovecraft.LoveCraftClient"
+		],
+		"fabric-datagen": [
+			"fr.deke.lovecraft.LoveCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"love-craft.mixins.json",
+		{
+			"config": "love-craft.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
